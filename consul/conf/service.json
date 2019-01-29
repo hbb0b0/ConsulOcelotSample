@@ -1,0 +1,81 @@
+{
+
+  "encrypt": "7TnJPB4lKtjEcCWWjN6jSA==",
+
+  "services": [
+
+    {
+
+      "id": "API001",
+
+      "name": "API001",
+
+      "tags": [ "API001" ],
+
+      "address": "192.168.8.66",
+
+      "port": 5001,
+
+      "checks": [
+
+        {
+
+          "id": "API001_Check",
+
+          "name": "API001_Check",
+
+          "http": "http://192.168.8.66:5001/health",
+
+          "interval": "10s",
+
+          "tls_skip_verify": false,
+
+          "method": "GET",
+
+          "timeout": "1s"
+
+        }
+
+      ]
+
+    },
+
+    {
+
+      "id": "API002",
+
+      "name": "API002",
+
+      "tags": [ "API002" ],
+
+      "address": "192.168.8.66",
+
+      "port": 5002,
+
+      "checks": [
+
+        {
+
+          "id": "API002_Check",
+
+          "name": "API002_Check",
+
+          "http": "http://192.168.8.66:5002/health",
+
+          "interval": "10s",
+
+          "tls_skip_verify": false,
+
+          "method": "GET",
+
+          "timeout": "1s"
+
+        }
+
+      ]
+
+    }
+
+  ]
+
+}
